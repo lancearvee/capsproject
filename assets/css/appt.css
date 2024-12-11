@@ -1,0 +1,204 @@
+/* Container styling */
+.schedule-container {
+    margin-left: 250px; /* Adjust based on sidebar width */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-container h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.schedule-container h2 {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #4a3c88;
+    color: white;
+}
+
+thead th {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Full row styling */
+tbody tr.full {
+    background-color: #f2f2f2;
+    color: #888;
+    font-style: italic;
+}
+
+/* Buttons styling */
+button.time-btn {
+    background-color: #4a3c88;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button.time-btn:hover {
+    background-color: #0056b3;
+}
+
+button.edit-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button.edit-btn:hover {
+    background-color: #218838;
+}
+
+button.edit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Table hover effect */
+tbody tr:hover {
+    background-color: #f1f9ff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .schedule-container {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    thead th, tbody td {
+        padding: 8px;
+    }
+
+    button.time-btn, button.edit-btn {
+        font-size: 12px;
+        padding: 6px 8px;
+    }
+}
+/* Modal container styling */
+#edit-modal {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed position so it stays in the same place on scroll */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Offset by half of its own width and height */
+    width: 500px; /* Adjust width as needed */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Ensure modal is on top of everything */
+    border-radius: 8px; /* Optional: Rounded corners */
+    display: flex;
+    flex-direction: column; /* Column direction for inputs and labels */
+    gap: 15px; /* Spacing between input fields */
+}
+
+#modal-container {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: none; /* Initially hidden */
+    z-index: 9998; /* Below the modal */
+}
+
+#edit-modal label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#edit-modal input {
+    padding: 8px;
+    font-size: 14px;
+    width: 100%; /* Full width for input fields */
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#edit-modal .input-group {
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 10px; /* Space between fields */
+    align-items: center;
+}
+
+#edit-modal .input-group input {
+    flex: 1; /* Allow inputs to grow and take available space */
+}
+
+#edit-modal .input-group label {
+    width: 120px; /* Fixed width for labels */
+}
+
+#save-btn, #cancel-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50; /* Green background for Save button */
+    color: white;
+    font-size: 16px;
+    width: 100px; /* Adjust width of buttons */
+    align-self: flex-end; /* Align buttons to the right */
+}
+
+#cancel-btn {
+    background-color: #f44336; /* Red background for Cancel button */
+}
+
+#save-btn:hover, #cancel-btn:hover {
+    opacity: 0.8; /* Slight transparency when hovered */
+}
+

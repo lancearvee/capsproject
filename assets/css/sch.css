@@ -1,0 +1,60 @@
+/* Container adjustments for sidebar */
+.container-fluid {
+    margin-left: 250px; /* Adjust based on sidebar width */
+    padding: 20px; /* Padding to give some space inside the container */
+}
+
+/* Form card styling */
+.card {
+    margin: 20px auto;
+    max-width: 600px; /* Set max-width for form card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Card header styling */
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Form control styling */
+.form-control {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Submit button styling */
+.card-footer .btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .card {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .form-control {
+        font-size: 12px;
+    }
+
+    .card-footer .btn-primary {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5c2eaa;
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.header-buttons .btn {
+    background-color: #ffffff;
+    color: #5c2eaa;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.main-content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-section {
+   
+    color: black;
+    padding: 50px 20px;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.hero-section .get-started {
+    background-color: #5c2eaa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+     margin-left: 20px;
+}
+
+.images-section {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0;
+    padding: 10px;   
+}
+
+.image-container {
+    margin: 0 40px;
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+
+}
+/* Main Section */
+.hero-section {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-between; /* Space between left and right content */
+    align-items: center; /* Align items vertically */
+    padding: 50px 20px;
+    background-color: #ded9f1; /* Light violet background */
+}
+
+.content-left {
+    flex: 1; /* Take up equal space */
+    padding-right: 20px; /* Add space between text and the image */
+}
+
+.content-left h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.content-left p {
+    font-size: 1rem;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.content-left .get-started {
+    text-decoration: none;
+    background-color: #5c2eaa; /* Violet button */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content-right {
+    flex: 1; /* Take up equal space */
+    text-align: center; /* Center the image */
+}
+
+.profile-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%; /* Circular image */
+    border: 5px solid white;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}

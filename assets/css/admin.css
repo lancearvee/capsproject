@@ -1,0 +1,20 @@
+/* Custom column width for 5 boxes */
+.custom-col {
+    flex: 0 0 19%; /* Adjust to fit all 5 boxes in the row */
+    max-width: 19%; /* Matches flex-basis */
+    margin: 0 0.5%; /* Optional spacing between boxes */
+  }
+  
+  .row {
+    overflow-x: auto; /* Ensure no overflow issues */
+  }
+  
+  .small-box {
+    min-height: 120px; /* Adjust height as needed */
+    text-align: center;
+  }
+  
+  .content {
+    margin-left: 250px; /* Adjust based on sidebar width */
+  }
+  

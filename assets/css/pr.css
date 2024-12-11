@@ -1,0 +1,68 @@
+/* Container adjustments for sidebar */
+.container-fluid {
+    margin-left: 250px; /* Adjust according to the sidebar width */
+}
+
+/* Card styling */
+.card {
+    margin: 20px auto;
+    width:990px;
+}
+
+/* Card header styling */
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Form rows: 3 fields per line */
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    gap: 20px; /* Spacing between columns */
+    margin-bottom: 15px; /* Add space between rows */
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr; /* Stack fields vertically on smaller screens */
+    }
+}
+
+/* Styling for individual form groups */
+.form-group {
+    margin-bottom: 15px;
+    width: 100%; /* Ensure the form fields take up the full width of their container */
+}
+
+/* Textarea styling */
+textarea.form-control {
+    resize: none;
+    height: 100px;
+}
+
+/* Submit button styling */
+.card-footer {
+    display: flex;
+    justify-content: flex-end; /* Align submit button to the right */
+    margin-top: 20px; /* Add top margin for better spacing */
+}
+
+/* Adjust submit button width if needed */
+.card-footer .btn {
+    width: 150px; /* Adjust the width of the submit button */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.card-footer .btn:hover {
+    background-color: #0056b3;
+}

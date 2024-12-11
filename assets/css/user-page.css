@@ -1,0 +1,291 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4a3c88;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo img {
+    width: 40px;
+    height: auto;
+}
+
+.h2 {
+    padding-right: 650px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a.active {
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+}
+
+header nav ul li button.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 1px;
+    background-color: #4a3c88;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu ul li {
+    padding: 10px 20px;
+}
+
+.dropdown-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.dropdown-menu ul li:hover {
+    background-color: #8874db;
+}
+
+/* Show Dropdown Menu */
+.dropdown-menu.show {
+    display: block;
+}
+/* Hero Section */
+.hero {
+    display: flex;
+    background: url('../image/1 12.png') no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 300px;
+    color: white;
+}
+
+.hero-text {
+    max-width: 60%;
+}
+
+.hero-text h1 {
+    margin-left: 80px;
+    font-size: 2em;
+    color: #000000;
+}
+
+.hero-text p {
+    line-height: 1.5;
+    margin-left: 80px;
+    color: #020000;
+}
+
+.hero-text .btn {
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.doctor-image img {
+    border-radius: 50%;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.feature {
+    text-align: center;
+    padding: 50px 90px;
+    border-radius: 14px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.feature img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Chatbot Button Styling */
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4a3c88;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.chatbot-button:hover {
+    background-color: #8874db;
+}
+
+/* Modal Styling */
+.chatbot-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Modal Content */
+.chatbot-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chatbot-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: #4a3c88;
+    cursor: pointer;
+}
+
+/* Chatbox Styles */
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    justify-content: space-between;
+}
+
+.chatbox-messages {
+    overflow-y: auto;
+    height: 240px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+
+.chatbox-message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: #4a3c88;
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+}
+
+/* Input Field & Send Button */
+.chatbox-input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatbox-input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    font-size: 14px;
+}
+
+.chatbox-send {
+    background-color: #4a3c88;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chatbox-send:hover {
+    background-color: #8874db;
+}

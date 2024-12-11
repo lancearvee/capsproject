@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+.container {
+    width: 70%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.header, .patient-info, .prescription-details, .footer {
+    margin-bottom: 20px;
+}
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header img {
+    max-height: 80px;
+}
+.header .clinic-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.patient-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+.patient-info div {
+    width: 48%;
+}
+.prescription-details {
+    font-size: 18px;
+}
+.prescription-details table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+.prescription-details table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f4f4f9;
+}
+.footer {
+    margin-top: 30px;
+    text-align: center;
+}
+.footer .doctor-signature {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 20px;
+}
+.footer .btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.footer .btn:hover {
+    background-color: #45a049;
+}
