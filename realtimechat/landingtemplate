@@ -1,0 +1,17 @@
+<script>start("c:\\xampp\\htdocs\\thyroid\\landingtemplate\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("cdn.jsdelivr.net","cdn.jsdelivr.net",1,0,"0 B",1737984301,"1/27/25, 9:25:01 PM");</script>
+<script>addRow("cdnjs.cloudflare.com","cdnjs.cloudflare.com",1,0,"0 B",1737984302,"1/27/25, 9:25:02 PM");</script>
+<script>addRow("code.jquery.com","code.jquery.com",1,0,"0 B",1737984302,"1/27/25, 9:25:02 PM");</script>
+<script>addRow("css","css",1,0,"0 B",1737984302,"1/27/25, 9:25:02 PM");</script>
+<script>addRow("img","img",1,0,"0 B",1738126964,"1/29/25, 1:02:44 PM");</script>
+<script>addRow("js","js",1,0,"0 B",1737984302,"1/27/25, 9:25:02 PM");</script>
+<script>addRow("lib","lib",1,0,"0 B",1737984303,"1/27/25, 9:25:03 PM");</script>
+<script>addRow("about.html","about.html",0,14731,"14.4 kB",1737887646,"1/26/25, 6:34:06 PM");</script>
+<script>addRow("appointment.html","appointment.html",0,16797,"16.4 kB",1737887646,"1/26/25, 6:34:06 PM");</script>
+<script>addRow("contact.html","contact.html",0,16335,"16.0 kB",1737887647,"1/26/25, 6:34:07 PM");</script>
+<script>addRow("index.html","index.html",0,43984,"43.0 kB",1737887647,"1/26/25, 6:34:07 PM");</script>
+<script>addRow("price.html","price.html",0,18294,"17.9 kB",1737887647,"1/26/25, 6:34:07 PM");</script>
+<script>addRow("service.html","service.html",0,16506,"16.1 kB",1737887647,"1/26/25, 6:34:07 PM");</script>
+<script>addRow("team.html","team.html",0,19919,"19.5 kB",1737887647,"1/26/25, 6:34:07 PM");</script>
+<script>addRow("testimonial.html","testimonial.html",0,14102,"13.8 kB",1737887647,"1/26/25, 6:34:07 PM");</script>

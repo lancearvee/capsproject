@@ -34,7 +34,7 @@
 html{
    font-size: 62.5%;
    overflow-x: hidden;
-   background-image: url('../../image/1\ 10.png'); /* Replace with the URL of your image */
+   background-image: url('../image/1\ 10.png'); /* Replace with the URL of your image */
 background-size: cover; /* Makes sure the background image covers the entire area */
 background-position: center; /* Centers the background image */
 
